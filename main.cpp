@@ -5,14 +5,16 @@ int main()
 {
     int n;
     // TODO: ask user for input
+    cout << "Enter a number: ";
+    cin >> n;
 
-    // TODO: outer loop for each row
-
-        // TODO: inner loop to print letters for this row
-
-            // TODO: print the letter for this column
-
-        // TODO: print newline after each row
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < i; j++) {
+            printf("%c", 65+(j));
+            cout << " ";
+        }
+        cout << endl;
+    }
 
 
     return 0;
